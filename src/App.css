@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 6vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10%;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.269);
+}
+#logo-img{
+  height: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+#icons-list{
+  display: flex;
+  list-style-type: none;
+  position: sticky;
+  font-size: 1.6rem;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home-searchbar{
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(69, 70, 70, 0.106);
+  padding: 5px 20px;
+  font-size: 1rem;
 }
+
+.post-section{
+  width: 500px;
+  min-height: 50px;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  background-color: #FAFAFA;
+}
+.post{
+border-radius: 10px;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.086);
+margin-bottom: 2rem;
+}
+
+.post h3{
+padding-top: 20px;
+padding-left: 20px;
+}
+.post img{
+  max-width: 100%;
+}
+
+.actions{
+display: flex;
+width: 100%;
+font-size: 1.8rem;
+gap: 3%;
+}
+
+.actions :nth-child(3){
+  margin-right: auto;
+}
+
+.actions :nth-child(1){
+margin-left: 10px;
+}
+
+.actions :nth-child(4){
+  margin-right: 10px;
+}
+
+.post-like-count{
+  margin-left: 10px;
+}
+
+.caption {
+margin-left: 10px;
+padding-bottom: 30px;
+}
+.comment-container {
+  margin-left: 10px;
+}
+.comment-top-container{
+  display: flex;
+  gap: 2%;
+  position: relative;
+}
+
+.comment-top-container ion-icon {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+}
+
+
