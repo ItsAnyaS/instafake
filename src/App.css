@@ -38,8 +38,8 @@ main{
   background-color: #FAFAFA;
 }
 .post{
-border-radius: 10px;
-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.086);
+border-radius: 5px;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.086);
 margin-bottom: 2rem;
 }
 
@@ -76,7 +76,6 @@ margin-left: 10px;
 
 .caption {
 margin-left: 10px;
-padding-bottom: 30px;
 }
 .comment-container {
   margin-left: 10px;
@@ -85,12 +84,150 @@ padding-bottom: 30px;
   display: flex;
   gap: 2%;
   position: relative;
+  margin: 0;
 }
 
 .comment-top-container ion-icon {
   position: absolute;
   top: 17px;
   right: 20px;
+  margin: 0;
+}
+
+.comment-section p {
+margin:0;
+padding-left: 10px;
+padding-bottom: 20px;
+}
+
+.comment-section p:hover{
+  cursor: pointer;
+}
+
+.add-comment {
+  border-top: 1px solid rgba(0, 0, 0, 0.187);
+  display: flex;
+  padding-top: 15px;
+  align-items: center;
+  position: relative;
 }
 
 
+.add-comment button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  color: #2C95F6;
+  top: 15px;
+  right: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+#expanded-post{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.533);
+
+}
+
+#expanded-post img {
+max-width: 700px;
+max-height: 700px;
+}
+
+
+#expanded-post-container{
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#expanded-post-content{
+  min-width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom: 5px;
+
+}
+
+#expanded-post-content-inner p {
+    padding-left: 20px;
+}
+
+
+
+
+#expanded-post-comment-ul{
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#expanded-post-comment-ul li {
+  position: relative;
+}
+
+#expanded-post-comment-ul li ion-icon {
+  position: absolute;
+  right: 15px;
+}
+
+
+
+#expanded-post-content-inner{
+display: flex;
+background-color: white;
+}
+
+#expanded-post-divider{
+padding: 0;
+}
+
+.expanded-post-interaction-section{
+  font-size: 2rem;
+  padding-left: 10px;
+}
+
+.expanded-post-interaction-section ion-icon {
+  margin: 0 5px;
+}
+
+#third-child{
+  margin-right: 120px;
+}
+
+
+
+.expanded-post-comment-section{
+  position: relative;
+}
+
+.expanded-post-add-comment-section{
+display: flex;
+border-top: 1px solid rgba(0, 0, 0, 0.381);
+width: 300px;
+}
+
+.expanded-post-add-comment-section button {
+  background-color: transparent;
+  border: none;
+  color: #2C95F6;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  margin-left: 80px;
+}
+
+.expanded-post-add-comment-section p {
+  margin-right: auto;
+}
+
+.expanded-comment-interaction-section{
+ margin-top: auto;
+}

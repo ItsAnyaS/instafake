@@ -10,22 +10,22 @@ console.log(props.comment.likes)
      setCommentIsLiked((prevState) => !prevState);
      return;
    }
-    const putCommentLikes = async () => {
-      fetch(`http://localhost:3000/posts/${props.postId}`, {
-        method: "PATCH",
-        headers: {
-          "content-type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          comments: {
-            id: props.comment.id,
-            likes: props.comment.likes + 1,
-          },
-        }),
-      });
-    };
-    putCommentLikes();
+    // const putCommentLikes = async () => {
+    //   fetch(`http://localhost:3000/posts/${props.postId}`, {
+    //     method: "PATCH",
+    //     headers: {
+    //       "content-type": "application/json",
+    //       Accept: "application/json",
+    //     },
+    //     body: JSON.stringify({
+    //       comments: {
+    //         id: props.comment.id,
+    //         likes: props.comment.likes + 1,
+    //       },
+    //     }),
+    //   });
+    // };
+    // putCommentLikes();
   
    setCommentIsLiked((prevState) => !prevState);
 //    setCurrentLikes((prevLikes) => prevLikes + 1);
